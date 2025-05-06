@@ -1,0 +1,58 @@
+{
+    "devices": [
+      {
+        "device_id": "table001",
+        "entity_name": "Table:001",
+        "entity_type": "CaféTable",
+        "protocol": "PDI-IoTA-UltraLight",
+        "transport": "MQTT",
+        "attributes": [
+          { "object_id": "t", "name": "temperature", "type": "Number" },
+          { "object_id": "n", "name": "noiseLevel", "type": "Number" },
+          { "object_id": "o", "name": "occupied", "type": "Boolean" }
+        ],
+        "static_attributes": []
+      },
+      {
+        "device_id": "table002",
+        "entity_name": "Table:002",
+        "entity_type": "CaféTable",
+        "protocol": "PDI-IoTA-UltraLight",
+        "transport": "MQTT",
+        "attributes": [
+          { "object_id": "t", "name": "temperature", "type": "Number" },
+          { "object_id": "n", "name": "noiseLevel", "type": "Number" },
+          { "object_id": "o", "name": "occupied", "type": "Boolean" }
+        ],
+        "static_attributes": []
+      },
+      {
+        "device_id": "table003",
+        "entity_name": "Table:003",
+        "entity_type": "CaféTable",
+        "protocol": "PDI-IoTA-UltraLight",
+        "transport": "MQTT",
+        "attributes": [
+          { "object_id": "t", "name": "temperature", "type": "Number" },
+          { "object_id": "n", "name": "noiseLevel", "type": "Number" },
+          { "object_id": "o", "name": "occupied", "type": "Boolean" }
+        ],
+        "static_attributes": []
+      },
+      {
+        "device_id": "table003",
+        "entity_name": "Table:003",
+        "entity_type": "CaféTable",
+        "protocol": "PDI-IoTA-UltraLight",
+        "transport": "MQTT",
+        "attributes": [
+          { "object_id": "t", "name": "temperature", "type": "Number" },
+          { "object_id": "n", "name": "noiseLevel", "type": "Number" },
+          { "object_id": "o", "name": "occupied", "type": "Boolean" }
+        ],
+        "static_attributes": []
+      }
+      
+    ]
+  }
+  
