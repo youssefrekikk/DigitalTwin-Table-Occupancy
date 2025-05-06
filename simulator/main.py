@@ -3,7 +3,7 @@ import random
 import time
 import json
 
-BROKER = "mosquitto"  # Docker service name
+BROKER = "mosquitto"
 TOPIC = "/iot/data"
 
 TABLE_IDS = ["table001", "table002", "table003", "table004"]
@@ -19,7 +19,7 @@ def generate_table_data(table_id):
 while True:
     for table_id in TABLE_IDS:
         payload = generate_table_data(table_id)
-        print(f"Publishing for {table_id}: {payload}")
+        print(f"Publishing: {payload}")
         publish.single(
             topic=TOPIC,
             payload=json.dumps(payload),
