@@ -28,7 +28,7 @@ A modern, simulated digital twin system for monitoring and managing table occupa
 
 1. **Clone the repository**
    ```bash
-   git clone <your-repo-url>
+   git clone <this-repo-url>
    cd DigitalTwin-Table-Occupancy
    ```
 2. **Generate data and train the ML model**
