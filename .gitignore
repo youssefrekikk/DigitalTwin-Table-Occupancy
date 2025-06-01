@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+backend/__pycache__/
+backend/.venv/
+
+# Node
+node_modules/
+dashboard/node_modules/
+dashboard/build/
+
+# Data/ML
+ml/*.pkl
+data/*.csv
+
+# Env
+.env
+
+# System
+.DS_Store
+Thumbs.db 

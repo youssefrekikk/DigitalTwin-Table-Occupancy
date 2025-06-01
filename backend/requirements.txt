@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+paho-mqtt
+pymongo
+python-dotenv
+joblib
+scikit-learn 

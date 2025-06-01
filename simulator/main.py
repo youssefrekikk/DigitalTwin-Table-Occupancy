@@ -2,6 +2,7 @@ import paho.mqtt.publish as publish
 import random
 import time
 import json
+import datetime
 
 BROKER = "mosquitto"
 TOPIC = "/iot/data"
@@ -13,7 +14,9 @@ def generate_table_data(table_id):
         "id": table_id,
         "temperature": round(random.uniform(20, 28), 1),
         "noiseLevel": round(random.uniform(50, 80), 1),
-        "occupied": random.choice([True, False])
+        "occupied": random.choice([True, False]),
+        "deviceCount": random.randint(1, 4),
+        "timestamp": datetime.datetime.utcnow().isoformat() + "Z"
     }
 
 while True:

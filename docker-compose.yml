@@ -47,3 +47,25 @@ services:
     depends_on:
       - iot-agent
     restart: always
+
+  backend:
+    build: ./backend
+    container_name: backend
+    ports:
+      - "8000:8000"
+    depends_on:
+      - mongo
+      - mosquitto
+    environment:
+      - MONGO_URL=mongodb://mongo:27017
+      - MQTT_BROKER=mosquitto
+    restart: unless-stopped
+
+  dashboard:
+    build: ./dashboard
+    container_name: dashboard
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    restart: unless-stopped
